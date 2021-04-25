@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.expense_nav{
+    background-color: #6ab04c;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 6px -6px rgba(185, 184, 184, 0.829);
+}
+.header_nav{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}

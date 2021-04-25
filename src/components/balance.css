@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.balance_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: #6ab04c; */
+}
+.bal_amt{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.bal{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    margin-right: 250px;
+}

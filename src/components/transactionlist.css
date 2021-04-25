@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.history{
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.history_heading{
+    border-bottom: 1px solid #dcdde1;
+    width: 300px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+.history_heading h4{
+    margin-bottom: 10px;
+}
+.history_list{
+    margin-top: 10px;
+    margin-right: 50px;
+    background: #fff;
+    width: 300px;
+    height: 35px;
+    box-shadow: 0 6px 9px -6px rgba(185, 184, 184, 0.829);
+    
+}
+.history_item{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding: 7px 10px 6px 8px;
+    border-right: 5px solid #ff3838; 
+}
+.delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .history_list li:hover .delete-btn {
+    opacity: 1;
+  }

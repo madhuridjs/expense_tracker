@@ -1,7 +1,9 @@
-import React from 'react'
-import './addTransaction.css'
+import React, {useState, useContext} from 'react'
+import './addTransaction.css';
 
 export const AddTransaction = () => {
+const [text, setText] = useState('');
+const [amount, setAmount] = useState(0); 
     return (
         <>
             <div className= 'transaction'>
@@ -11,11 +13,19 @@ export const AddTransaction = () => {
                 <form>
                     <div className= 'input'>
                         <label>Text</label>
-                        <input type= 'text' placeholder= 'Enter text...'></input>
+                        <input 
+                            type= 'text'  
+                            value= {text}
+                            onChange= {event => setText(event.target.value)}
+                            placeholder= 'Enter text...'></input>
                     </div>
                     <div className= 'input'>
                         <label>Amount</label>
-                        <input type= 'number' placeholder= 'Enter amount...'></input>
+                        <input 
+                            type= 'number'
+                            value= {amount}
+                            onChange= {event => setAmount(event.target.value)}
+                            placeholder= 'Enter amount...'></input>
                     </div>
                     <button className= 'add-btn'>Add Transaction</button>
                 </form> 
